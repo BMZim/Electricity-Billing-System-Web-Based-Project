@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Billing System</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            top: 0;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            background-image: url(img/thunder.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .main{
+            margin-top: 70px;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+        .content{
+            padding-top: 50px;
+        }
+        header{
+            display: flex;
+            gap: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        #title{
+            padding-left: 30px;
+        }
+        #detail{
+            padding-top: 30px;
+            padding-left: 100px;
+        }
+        #clear{
+            padding-top: 30px;
+            padding-left: 420px;
+        }
+        .btn{
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-evenly; 
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            width: 100px;
+            text-align: center;
+            padding: 12px;
+            box-shadow: 0px 0px 5px white;
+        }
+        a:hover{
+            color: black;
+            border: 2px solid black;
+            box-shadow: 0px 0px 5px black;
+            transition: 0.3s;
+        }
+        @media (max-width: 700px) {
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 1000px;
+            }
+            header{
+                font-size: 10px;
+            }
+            .main{
+                margin-left: 15px;
+                width: 400px;
+            }
+            #title{
+                text-align: center;
+            }
+            #detail{
+                padding-left: 10px;
+            }
+            #clear{
+                padding-left: 100px;
+            }
+  }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <header>
+                <img src="img/ecicon.png" alt="">
+                <h1>Electricity Billing System</h1>
+            </header>
+            
+        </div>
+        <div class="content">
+            <h3 id="title">Welcome to Electricity Billing System,</h3>
+            <p id="detail">Your one-stop solution for managing electricity bills with ease. Our platform offers seamless access to view, pay, and manage your electricity bills online. Stay updated with real-time usage tracking, payment history, and customizable notifications. Enjoy a hassle-free experience with secure transactions and 24/7 customer support. Simplify your energy management with us today!</p>
+            <h3 id="clear">Identify Yourself as ?</h3>
+            <div class="btn">
+                <a href="adminlogin.php">Admin</a>
+                <a href="userlogin.php">User</a>
+            </div>
+            
+        </div>
+        
+
+
+    </div>
+</body>
+</html>
